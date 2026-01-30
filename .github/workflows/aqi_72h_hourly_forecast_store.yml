@@ -42,6 +42,6 @@ jobs:
 
       - name: Generate and store 72h forecast
         env:
-          MONGO_URI: ${{ secrets.MONGO_URI }}
+          MONGO_URI: mongodb+srv://ummeh908_db_user:Xm9d9RVmWrXYbWux@aqi.s1wqbse.mongodb.net/?appName=aqi
         run: |
           python 06_generate_and_store_next72h_forecast.py
