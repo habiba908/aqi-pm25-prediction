@@ -1,6 +1,8 @@
 name: AQI 72h - Hourly Forecast Store
 
 on:
+  schedule:
+    - cron: "0 * * * *"
   workflow_dispatch: {}
 
 permissions:
